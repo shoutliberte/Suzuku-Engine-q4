@@ -6,7 +6,7 @@ Qwen3.8-Flash-Next を極限まで最適化して動かすことを目的とし�
 
 ![OpenCode（xhigh）で q4 が作った Pagoda Garden](docs/pagoda.png)
 
-OpenCode, xhighでPagoda Gardenを回した結果。Agenticな動作やCompactionの動作を検証するために、少しだけ修正を加えたFew-shotです。(one-shotのポン出しではありません)
+OpenCode, xhighでPagoda Gardenを回した結果。Agenticな動作やCompactionの動作を検証するために、少しだけ修正指示を出して改善させたものです。(一会話のポン出しではありません)
 
 - routed expert を DRAM に全常駐させ、よく使う expert だけを VRAM（L1）に置きます。PLE（n-gram 26.82 GiB）は SSD から読みます。
 - MTP、vision入力、OpenAI 互換サーバー機能つき。

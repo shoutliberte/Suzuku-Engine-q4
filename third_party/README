@@ -1,0 +1,10 @@
+third_party/llama.cpp
+=====================
+
+Vendored MMQ subset (MIT). The license is `llama.cpp/LICENSE`.
+Copied from the llama.cpp tree Strata builds against (Strata 6f32ec0,
+2026-10-04); `ggml/src/ggml-cuda/mmq.cuh` is modified by q4 (launch
+grid, Q4_MMQ_TUNE). See ../THIRD_PARTY_NOTICES.md. Only the headers and device sources
+needed to compile mul_mat_q and q8_1 activation quantization for
+gfx1100 are included. Host symbols those objects expect are provided
+by `src/q4_mmq.cu`.
